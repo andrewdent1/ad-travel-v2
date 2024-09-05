@@ -20,6 +20,10 @@
             background-color: transparent;
         }
 
+        #about, #destinations, #blog, #contact {
+            margin: 100px 0px 100px 0px;
+        }
+
         .header-colored {
             background-color: #dc2525; /* Change this to your desired color */
         }
@@ -75,8 +79,12 @@
         }
 
         #about {
-            margin-left: 5%;
-            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 0% 5%;
         }
 
         #blog {
@@ -107,7 +115,6 @@
         #about, #blog, #contact p {
             font-family: 'Montserrat', serif;
             font-weight: 300;
-            font-size: small;
         }
 
         .about-button {
@@ -118,6 +125,7 @@
             font-family: 'Montserrat', serif;
             font-weight: 500;
             background-color: #ffffff;
+            max-width: 15%;
         }
 
         .about-button a {
