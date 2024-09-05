@@ -88,8 +88,13 @@
         }
 
         #destinations {
+            display: block;
+        }
+
+        #destinations h2 {
             display: flex;
             justify-content: center;
+            margin-bottom: 20px;
         }
 
         h2 {
@@ -105,10 +110,6 @@
             font-size: small;
         }
 
-        #home, #about, #blog, #contact, #destinations {
-            height: 75vh;
-        }
-
         .about-button {
             margin-top: 20px;
             padding: 10px 15px;
@@ -119,11 +120,71 @@
             background-color: #ffffff;
         }
 
+        .about-button a {
+            text-decoration: none;
+            color: black;
+        }
+
         .header-colored {
             background-color: #000000;
             transition: background-color 0.3s;
         }
 
+        .slideshow-wrapper {
+            position: relative;
+            max-width: 100%;
+            overflow: hidden;
+        }
+
+        .slideshow-container {
+            overflow: hidden;
+            width: 100%;
+            margin-left: 10px;
+        }
+
+        .slideshow {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .slide {
+            min-width: 300px;
+            margin-right: 10px;
+        }
+
+        .slide img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            display: block;
+        }
+
+        /* Arrows */
+        .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            z-index: 10;
+            border-radius: 50%;
+        }
+
+        .left-arrow {
+            left: 10px;
+        }
+
+        .right-arrow {
+            right: 10px;
+        }
+
+        .arrow:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
 
         @media (max-width: 1200px) {
             h1 {
@@ -201,11 +262,46 @@
     <section id="about">
         <h2>Explore the world with us.</h2>
         <p>Movad is here to help you get out and experience the world, one new destination at a time. Travelling with Movad allows you to go where you want, when you want, with who you want.</p>
-        <button class="about-button">About Movad</button>
+        <button class="about-button"><a href="about.html">About Movad</a></button>
     </section>
 
     <section id="destinations">
         <h2>Destinations</h2>
+        <div class="slideshow-wrapper">
+            <button class="arrow left-arrow" id="left-arrow">&#10094;</button>
+            <div class="slideshow-container">
+                <div class="slideshow" id="slideshow">
+                    <div class="slide">
+                        <img src="Africa.png" alt="Slide 1">
+                    </div>
+                    <div class="slide">
+                        <img src="Arctic & Antarctic.png" alt="Slide 2">
+                    </div>
+                    <div class="slide">
+                        <img src="Asia.png" alt="Slide 3">
+                    </div>
+                    <div class="slide">
+                        <img src="Australia & Oceania.png" alt="Slide 4">
+                    </div>
+                    <div class="slide">
+                        <img src="Central America.png" alt="Slide 5">
+                    </div>
+                    <div class="slide">
+                        <img src="Europe.png" alt="Slide 6">
+                    </div>
+                    <div class="slide">
+                        <img src="North America.png" alt="Slide 7">
+                    </div>
+                    <div class="slide">
+                        <img src="South America.png" alt="Slide 8">
+                    </div>
+                    <div class="slide">
+                        <img src="The Middle East.png" alt="Slide 9">
+                    </div>
+                </div>
+            </div>
+            <button class="arrow right-arrow" id="right-arrow">&#10095;</button>
+        </div>
     </section>
     <section id="blog">
         <h2>Our Blog</h2>

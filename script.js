@@ -25,3 +25,38 @@ window.addEventListener('scroll', function() {
         header.classList.remove('header-colored');
     }
 });
+
+const slideshow = document.getElementById('slideshow');
+const leftArrow = document.getElementById('left-arrow');
+const rightArrow = document.getElementById('right-arrow');
+
+let currentPosition = 0;
+const slideWidth = 301 + 10;  // Slide width + margin (adjust as needed)
+const totalSlides = document.querySelectorAll('.slide').length;
+const slideshowWidth = slideWidth * totalSlides; // Total width of the slideshow
+const containerWidth = document.querySelector('.slideshow-container').clientWidth; // Visible width of the container
+
+// Calculate the maximum scroll position (negative value, allowing the last slide to stop perfectly)
+const maxScroll = -(slideshowWidth - containerWidth);
+
+// Scroll to the left
+leftArrow.addEventListener('click', () => {
+    if (currentPosition < 0) {
+        currentPosition += slideWidth;
+        if (currentPosition > 0) {
+            currentPosition = 0;  // Stop at the first slide
+        }
+        slideshow.style.transform = `translateX(${currentPosition}px)`;
+    }
+});
+
+// Scroll to the right
+rightArrow.addEventListener('click', () => {
+    if (currentPosition > maxScroll) {
+        currentPosition -= slideWidth;
+        if (currentPosition < maxScroll) {
+            currentPosition = maxScroll;  // Stop at the last slide
+        }
+        slideshow.style.transform = `translateX(${currentPosition}px)`;
+    }
+});

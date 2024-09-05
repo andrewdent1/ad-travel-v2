@@ -93,10 +93,6 @@ nav a:hover {
     }
 }
 
-#home, #about, #blog, #contact {
-    height: 75vh;
-}
-
 /* Contact Form Styles */
 form {
     max-width: 500px;
