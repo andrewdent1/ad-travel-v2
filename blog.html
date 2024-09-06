@@ -77,6 +77,8 @@
 
         .latest-post {
             margin: 0px 12%;
+            display: flex;
+            align-items: center;
         }
 
         .latest-post h2 {
@@ -92,11 +94,30 @@
 
         .blog-date {
             font-weight: 700;
-            margin: 10px 0px;
+            margin: 20px 0px;
         }
 
         .blog-button {
-            margin: 10px 0px;
+            margin-top: 20px;
+            padding: 10px 15px;
+            border-radius: 5%;
+            border-width: 1px;
+            font-family: 'Montserrat', serif;
+            font-weight: 500;
+            background-color: #ffffff;
+            max-width: 35%;
+            text-align: center;
+        }
+
+        .blog-button a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .seceda {
+            width: 100%;
+            border-radius: 5%;
+            margin-left: 50px;
         }
 
         @media (max-width: 1200px) {
@@ -172,12 +193,19 @@
 
     <!-- Blog Section -->
     <section class="latest-post">
-        <h2>Latest Post</h2>
-        <h3 class="blog-post-name">A Budget-Friendly Weekend in the Dolomites</h3>
-        <p class="blog-date">September 6, 2024</p>
-        <p>Ever dream of spending a weekend in the Dolomites without blowing your budget? This stunning region, once an underrated gem, has quickly become a favorite among travelers. With its dramatic landscapes and rich cultural history, it’s no surprise that prices are rising. But that doesn’t mean you can’t enjoy it without spending a fortune.</p>
-        <button class="blog-button"><a href="wknd-dolomites.html">Read Full Post</a></button>    
+        <div>
+            <h2>Latest Post</h2>
+            <h3 class="blog-post-name">A Budget-Friendly Weekend in the Dolomites</h3>
+            <p class="blog-date">September 6, 2024</p>
+            <p>Ever dream of spending a weekend in the Dolomites without blowing your budget? This stunning region, once an underrated gem, has quickly become a favorite among travelers. With its dramatic landscapes and rich cultural history, it’s no surprise that prices are rising. But that doesn’t mean you can’t enjoy it without spending a fortune.</p>
+            <button class="blog-button"><a href="wknd-dolomites.html">Read Full Post</a></button>    
+        </div>
+        <div>
+            <img src="Images/seceda.png" alt="" class="seceda">
+        </div>
     </section>
+
+    <hr class="break">
 
     <script src="script.js"></script>
 
