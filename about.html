@@ -5,27 +5,214 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luxury Travel | About</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">    
+        <style>
+        body {
+            font-family: 'Montserrat', serif;
+            margin-bottom: 100px;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .header-colored {
+            background-color: #000000;
+            transition: background-color 0.5s;
+        }
+
+        #home {
+            font-family: "Playfair Display", serif;
+            background: 'movad-home-vid.mp4';
+            background-attachment: fixed;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 100px;
+            background-color: #FFFBF4;
+        }
+
+        #about-cover {
+            z-index: -1;
+            height: 100vh;
+            width: 100%;
+            object-fit: cover;
+            top: 0;
+            left: 0;     
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.33);
+            z-index: 0;
+        }
+
+        .welcome-message {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            z-index: 1;
+        }
+
+        .welcome-message h1 {
+            font-size: 3em;
+            font-weight: 300;
+            margin: 0;
+        }
+
+        #definition h2 {
+            font-family: 'Montserrat', serif;
+            font-weight: 500;
+            margin: 25px 100px;
+        }
+
+        .prefix {
+            margin: 0px 150px;
+            font-weight: 500;
+            font-style: italic;
+        }
+
+        #def-p {
+            margin: 25px 150px;
+        }
+
+        #mission {
+            margin: 0px 15%;
+        }
+
+        #mission p {
+            margin: 25px 35px;
+        }
+
+        #mission h2 {
+            display: flex;
+            justify-content: center;
+            font-size: 2em;
+            font-weight: 300;
+            margin-bottom: 40px;
+        }
+        
+        #mission img {
+            width: 40%;
+            max-width: 400px;
+            border-radius: 5%;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .mission-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media (max-width: 1200px) {
+            h1 {
+                font-size: 2.5em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            button {
+                font-size: 1em;
+                text-align: center;
+            }
+
+            h2 {
+                font-size: 1.75rem;
+            }
+        }
+
+        @media (max-width: 800px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            p {
+                font-size: 0.85em;
+            }
+
+            button {
+                font-size: 0.8em;
+                text-align: center;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
 </head>
 <body>
-
     <!-- Banner -->
     <header>
-        <div class="logo">Luxury Travel</div>
         <nav>
+            <a href="index.html" id="logo"><img src="movad-logo-main.png" width="165" height="70"></a>
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li class="hideOnMobile"><a href="index.html">HOME</a></li>
+                <li class="hideOnMobile"><a href="about.html">ABOUT</a></li>
+                <li class="hideOnMobile"><a href="blog.html">BLOG</a></li>
+                <li class="hideOnMobile"><a href="contact.html">CONTACT</a></li>
+                <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
             </ul>
         </nav>
     </header>
+    
+        <section id="home">
+            <div class="container">
+                <img src="about-cover.png" alt="" id="about-cover">
+            </div>
+            <div class="overlay"></div>
+            <div class="welcome-message">
+                <h1>About Movad</h1>
+            </div>
+        </section>
 
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Us</h2>
-        <p>I offer luxury travel experiences tailored to your desires. From private tours to exclusive VIP experiences, we make your dream vacation a reality.</p>
-    </section>
+        <section id="definition">
+            <h2>Helping You Move Toward Your Next Adventure</h2>
+            <p class="prefix">‘mov-’ - a Latin prefix of the word ‘movere’, translating to “move”</p>
+            <p class="prefix">‘ad-’ - a Latin prefix translating to “toward”</p>
+            <p id="def-p">At Movad, we are dedicated to helping you move toward your dream travel experiences. We believe that travel is more than just a journey; it's a movement towards self-discovery, adventure, and new horizons.</p>
+        </section>
 
+        <hr class="break">
+
+        <section id="mission">
+            <h2>Our Mission</h2>
+            <div class="mission-row">
+                <p>At Movad, our mission is to inspire you to experience the world in all its richness. We believe that travel is not just about reaching a destination but about immersing yourself in diverse cultures, meeting new people, and savoring unique cuisines. It's about stepping out of your comfort zone and embracing the challenges and joys that come with exploring unfamiliar places.</p>
+                <img src="mission-soccer.png" alt="">
+            </div>
+            <div class="mission-row">
+                <img src="mission-boat.png" alt="">
+                <p>Through personalized itineraries and expert guidance, Movad is dedicated to helping you discover and connect with the world on a deeper level. Let us help you move toward new adventures, where every journey is an opportunity to grow, learn, and truly experience the vibrant tapestry of our planet.</p>
+            </div>
+        </section>
+
+        <br class="break">
+
+        <script src="script.js"></script>
 </body>
 </html>
