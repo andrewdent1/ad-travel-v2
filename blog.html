@@ -76,48 +76,53 @@
         }
 
         .latest-post {
-            margin: 0px 12%;
-            display: flex;
-            align-items: center;
+            max-width: 100vw;
+            margin: 0px 5%;
         }
 
         .latest-post h2 {
-            font-weight: 300;
             display: flex;
             justify-content: center;
-            margin-bottom: 25px;
+            font-weight: 300;
+            margin: 50px 0px;
+            font-size: xx-large;
         }
 
-        .blog-post-name {
-            font-weight: 500;
+        .latest-post-content {
+            max-width: 100vw;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        
+        .latest-post-text {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 20px;
+            margin-right: 70px;
         }
 
-        .blog-date {
-            font-weight: 700;
-            margin: 20px 0px;
+        .latest-post-text h3, p {
+            padding-bottom: 15px;
         }
 
-        .blog-button {
-            margin-top: 20px;
+        .latest-post-text button {
+            background-color: white;
             padding: 10px 15px;
-            border-radius: 5%;
-            border-width: 1px;
+            border: 1px solid black;
+            max-width: 30%;
             font-family: 'Montserrat', serif;
-            font-weight: 500;
-            background-color: #ffffff;
-            max-width: 35%;
-            text-align: center;
+            border-radius: 5%;
         }
 
-        .blog-button a {
+        .latest-post-text a {
             text-decoration: none;
             color: black;
         }
 
-        .seceda {
-            width: 100%;
+        .latest-post-content img {
+            max-width: 100%;
             border-radius: 5%;
-            margin-left: 50px;
         }
 
         @media (max-width: 1200px) {
@@ -191,17 +196,18 @@
         </div>
     </section>
 
-    <!-- Blog Section -->
     <section class="latest-post">
-        <div>
-            <h2>Latest Post</h2>
-            <h3 class="blog-post-name">A Budget-Friendly Weekend in the Dolomites</h3>
-            <p class="blog-date">September 6, 2024</p>
-            <p>Ever dream of spending a weekend in the Dolomites without blowing your budget? This stunning region, once an underrated gem, has quickly become a favorite among travelers. With its dramatic landscapes and rich cultural history, it’s no surprise that prices are rising. But that doesn’t mean you can’t enjoy it without spending a fortune.</p>
-            <button class="blog-button"><a href="wknd-dolomites.html">Read Full Post</a></button>    
-        </div>
-        <div>
-            <img src="Images/seceda.png" alt="" class="seceda">
+        <h2>Latest Post</h2>
+        <div class="latest-post-content">
+            <div class="latest-post-text">
+                <h3 class="blog-post-name">A Budget-Friendly Weekend in the Dolomites</h3>
+                <p class="blog-date">September 6, 2024</p>
+                <p>Ever dream of spending a weekend in the Dolomites without blowing your budget? This stunning region, once an underrated gem, has quickly become a favorite among travelers. With its dramatic landscapes and rich cultural history, it’s no surprise that prices are rising. But that doesn’t mean you can’t enjoy it without spending a fortune.</p>
+                <button class="blog-button"><a href="weekend-dolomites.html">Read Full Post</a></button>    
+            </div>
+            <div class="seceda">
+                <img src="Images/seceda.png" alt="">
+            </div>
         </div>
     </section>
 
