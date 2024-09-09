@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post Template</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Playfair Display', serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #3E2905;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .navbar {
+            list-style-type: none;
+        }
+
+        .navbar li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .post-header {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .post-header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            color: #3E2905;
+        }
+
+        .post-header p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        .post-content {
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .related-posts h3 {
+            font-size: 22px;
+            color: #3E2905;
+        }
+
+        .related-posts ul {
+            list-style-type: none;
+        }
+
+        .related-posts ul li {
+            margin: 10px 0;
+        }
+
+        .related-posts ul li a {
+            color: #3E2905;
+            text-decoration: none;
+        }
+
+        .related-posts ul li a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #3E2905;
+            color: white;
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="post-header">
+            <h1 id="post-title">Blog Post Title</h1>
+            <p id="post-author">By <span id="author-name">Author Name</span> | <span id="post-date">Date</span></p>
+        </section>
+
+        <section class="post-content" id="post-content">
+            <p>This is where the content of your blog post goes. You can easily update this section with the actual text, images, or other content specific to your post.</p>
+        </section>
+
+        <aside class="related-posts">
+            <h3>Related Posts</h3>
+            <ul>
+                <li><a href="#">Related Post 1</a></li>
+                <li><a href="#">Related Post 2</a></li>
+                <li><a href="#">Related Post 3</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 AD Travel. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js">
+        document.addEventListener('DOMContentLoaded', function() {
+            // Example content you can change dynamically
+            const postTitle = "10 Best Destinations for Luxury Travel in 2024";
+            const authorName = "Jane Doe";
+            const postDate = "September 9, 2024";
+            const postContent = `
+                <p>If you’re dreaming of exploring the world in style, these top destinations will offer unforgettable luxury travel experiences in 2024. From private island retreats to five-star city escapes, we’ve got your next adventure covered.</p>
+                <p>Let’s dive into the best luxury destinations for the upcoming year.</p>
+                <h2>1. The Maldives</h2>
+                <p>The Maldives continues to reign as a top destination for travelers looking to experience the ultimate in luxury. Whether staying in an overwater villa or enjoying private yacht charters, the islands offer something for everyone.</p>
+                <h2>2. Paris, France</h2>
+                <p>The city of lights offers a blend of world-class cuisine, high fashion, and unforgettable sights, making it a must-visit destination for luxury travelers.</p>
+                <!-- Add more content here -->
+            `;
+
+            document.getElementById('post-title').innerText = postTitle;
+            document.getElementById('author-name').innerText = authorName;
+            document.getElementById('post-date').innerText = postDate;
+            document.getElementById('post-content').innerHTML = postContent;
+        });
+
+    </script>
+</body>
+</html>
