@@ -34,32 +34,6 @@
             color: white;
         }
 
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
-        }
-
-        nav ul {
-            list-style-type: none;
-            display: flex;
-        }
-
-        nav ul li {
-            margin-left: 20px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        nav .menu-button {
-            display: none;
-        }
-
         #contact {
             background-image: url('Images/contact-cover.png');
             background-size: cover;
@@ -218,7 +192,7 @@
         </form>
     </section>
 
-    <script>
+    <script src="script.js">
         function toggleMenu() {
             document.querySelector('nav ul').classList.toggle('active');
         }

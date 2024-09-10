@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service | Movad Travel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', serif;
+        }
+
+        header {
+            background-color: black;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+
+        h1 {
+            color: black;
+            display: flex;
+            justify-content: center;
+            font-family: 'Playfair Display', serif;
+            font-size: 2em;
+            font-weight: 500;
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5em;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+
+        .terms li {
+            margin-bottom: 10px;
+            margin-left: 25px;
+        }
+
+        .terms p, .terms ul {
+            margin-bottom: 40px;
+        }
+
+        .terms {
+            margin: 150px 100px 100px 100px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9em;
+        }
+
+        footer a {
+            color: white;
+        }
+
+        footer p {
+            margin-bottom: 5px;
+        }
+
+        footer .social-icons {
+            margin: 10px 0;
+        }
+
+        footer .social-icons a {
+            margin: 0 10px;
+        }
+
+        footer .social-icons img {
+            width: 25px;
+            height: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html" id="logo"><img src="movad-logo-main.png" width="165" height="70" alt="Company Logo"></a>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+            <div class="menu-button" onclick="toggleMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+                </svg>
+            </div>
+        </nav>
+    </header>
+
+    <section class="terms">
+        <h1>Terms of Service</h1>
+        <h2>1. Introduction</h2>
+        <p>Welcome to Movad Travel. By using our services, you agree to these terms. Please read them carefully.</p>
+
+        <h2>2. Use of Service</h2>
+        <p>You agree to use our services for lawful purposes and comply with all applicable laws and regulations. You must not misuse our services.</p>
+
+        <h2>3. Intellectual Property</h2>
+        <p>All content provided on this website, including text, images, videos, and logos, is owned by Movad Travel. Unauthorized use of any materials is prohibited.</p>
+
+        <h2>4. User Conduct</h2>
+        <ul>
+            <li>You are responsible for maintaining the confidentiality of your account information.</li>
+            <li>You must not impersonate any person or entity or use a false identity.</li>
+            <li>You must not disrupt the functionality of the website or engage in any form of abuse or harassment.</li>
+        </ul>
+
+        <h2>5. Disclaimer of Warranties</h2>
+        <p>Movad Travel provides the website on an "as-is" basis and makes no warranties of any kind, either expressed or implied.</p>
+
+        <h2>6. Limitation of Liability</h2>
+        <p>Movad Travel is not liable for any damages arising out of your use or inability to use our services.</p>
+
+        <h2>7. Changes to Terms</h2>
+        <p>We may modify these terms at any time. Changes will be effective upon posting, and it is your responsibility to review them periodically.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Movad Travel. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="#"><img src="Social Logos/logo-facebook.png"></a>
+            <a href="#"><img src="Social Logos/logo-x.png"></a>
+            <a href="#"><img src="Social Logos/logo-instagram.png"></a>
+        </div>
+        <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
