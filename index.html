@@ -88,7 +88,8 @@
         }
 
         #blog {
-            margin-left: 5%;
+            padding: 40px;
+            background-color: #f5f5f5;
         }
 
         #contact {
@@ -115,6 +116,10 @@
         #about, #blog, #contact p {
             font-family: 'Montserrat', serif;
             font-weight: 300;
+        }
+
+        #contact-form {
+            font-family: 'Montserrat', serif;
         }
 
         .about-button {
@@ -195,6 +200,95 @@
             background-color: rgba(0, 0, 0, 0.7);
         }
 
+        .home-blog-posts {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .home-blog-posts a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .home-blog-bottom-button {
+            text-decoration: none;
+            color: white;
+        }
+
+        /* Individual blog post cards */
+        .home-blog-posts div {
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .home-blog-posts div:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Blog post images */
+        .home-blog-posts-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .home-blog-posts-head {
+            font-size: 1.5rem;
+            padding: 20px;
+            color: #333;
+            font-family: 'Playfair Display', serif;
+            font-weight: 300;
+        }
+
+        .home-blog-posts-p {
+            padding: 0 20px 20px 20px;
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .home-blog-posts-button {
+            width: calc(100% - 40px);
+            margin: 0 auto 20px;
+            padding: 10px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            display: flex;
+            align-content: flex-end;
+            font-family: 'Montserrat', serif;
+        }
+
+        .home-blog-posts-button:hover {
+            background-color: #715C33;
+        }
+
+        #blog button {
+            display: block;
+            margin: 40px auto;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            background-color: black;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-family: 'Montserrat', serif;
+            width: 25%;
+        }
+
+        #blog button:hover {
+            background-color: #715C33;
+        }
         footer {
             background-color: black;
             color: white;
@@ -241,6 +335,18 @@
             h2 {
                 font-size: 1.75rem;
             }
+
+            #blog h2 {
+                font-size: 2rem;
+            }
+            
+            .home-blog-posts-head {
+                font-size: 1.4rem;
+            }
+
+            .home-blog-posts-p {
+                font-size: 0.95rem;
+            }
         }
 
         @media (max-width: 800px) {
@@ -259,6 +365,57 @@
 
             h2 {
                 font-size: 1.5rem;
+            }
+
+            #blog h2 {
+                font-size: 1.8rem;
+            }
+            
+            .home-blog-posts-head {
+                font-size: 1.3rem;
+            }
+
+            .home-blog-posts-p {
+                font-size: 0.9rem;
+            }
+
+            .home-blog-posts-img {
+                height: 180px;
+            }
+
+            #blog {
+                padding: 30px 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            #blog h2 {
+                font-size: 1.6rem;
+            }
+            
+            .home-blog-posts-head {
+                font-size: 1.2rem;
+            }
+
+            .home-blog-posts-p {
+                font-size: 0.85rem;
+            }
+
+            .home-blog-posts-img {
+                height: 150px;
+            }
+
+            #blog {
+                padding: 20px 5px;
+            }
+
+            .home-blog-posts-button {
+                width: 90%;
+            }
+
+            #blog button {
+                padding: 8px 15px;
+                font-size: 1rem;
             }
         }
     </style>
@@ -345,8 +502,33 @@
     </section>
     <section id="blog">
         <h2>Our Blog</h2>
-        <p>Stay updated with the latest travel trends, tips, and destination guides. Our blog offers inspiration for
-            your next luxury getaway.</p>
+        <div class="home-blog-posts">
+            <div>
+                <img src="Images/seceda.png" alt="" class="home-blog-posts-img">
+                <h3 class="home-blog-posts-head">A Budgeted Weekend in the Dolomites</h3>
+                <p class="home-blog-posts-p">Ever dream of spending a weekend in the Dolomites without blowing your budget? With its dramatic landscapes and rich cultural history, this stunning region has quickly become a favorite among travelers. But that doesn’t mean you can’t enjoy it without spending a fortune.</p>
+                <button class="home-blog-posts-button"><a href="weekend-dolomites.html">View Post</a></button>
+            </div>
+            <div>
+                <img src="Images/sayulita.png" alt="" class="home-blog-posts-img">
+                <h3 class="home-blog-posts-head">The Trendiest Beach in 2024: Sayulita</h3>
+                <p class="home-blog-posts-p">Famous for its beaches, surfing, and laid-back ambiance, Sayulita is the perfect destination if you're looking to get off the beaten path. Sayulita offers an abundance of colorful streets, art galleries, and eateries, creating one of Mexico's best hidden gems.</p>
+                <button class="home-blog-posts-button"><a href="sayulita.html">View Post</a></button>
+            </div>
+            <div>
+                <img src="Images/siena.png" alt="" class="home-blog-posts-img">
+                <h3 class="home-blog-posts-head">One Day in the Heart of Tuscany</h3>
+                <p class="home-blog-posts-p">Welcome to Siena! Built in the 1200's, this Tuscan hill town will transport you back to the Middle Ages. Siena is well-known for its cuisine, art, museums, medieval architecture, and the Palio, Siena's iconic semi-annual horse race. In this guide we’ll be sharing the best way to do Siena all in one day.</p>
+                <button class="home-blog-posts-button"><a href="siena.html">View Post</a></button>
+            </div>
+            <div>
+                <img src="Images/oahu.png" alt="" class="home-blog-posts-img">
+                <h3 class="home-blog-posts-head">The 2024 Ultimate Guide to Oahu</h3>
+                <p class="home-blog-posts-p">Oahu is Hawaii's most populated island and the most popular among tourists. Oahu definitely offers the most things to do when compared to Maui, Kauai, or the Big Island. After having visited Oahu a few times, I've put together my favorite things to do, places to eat, and hidden gems around the island.</p>
+                <button class="home-blog-posts-button"><a href="oahu-guide.html">View Post</a></button>
+            </div>
+        </div>
+        <button><a href="blog.html" class="home-blog-bottom-button">View Full Blog</a></button>
     </section>
 
     <section id="contact">
