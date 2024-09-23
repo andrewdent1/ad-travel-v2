@@ -5,17 +5,17 @@ document.getElementById('contact-form')?.addEventListener('submit', function (ev
     this.reset();
 });
 
-function showSidebar(){
+function showSidebar() {
     const sidebar = document.querySelector('.sidebar')
     sidebar.style.display = 'flex'
 }
 
-function hideSidebar(){
+function hideSidebar() {
     const sidebar = document.querySelector('.sidebar')
     sidebar.style.display = 'none'
 }
 
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
     const header = document.querySelector('header');
     const scrollPosition = window.scrollY;
 
@@ -31,7 +31,7 @@ const leftArrow = document.getElementById('left-arrow');
 const rightArrow = document.getElementById('right-arrow');
 
 let currentPosition = 0;
-const slideWidth = 301 + 10;  // Slide width + margin (adjust as needed)
+const slideWidth = 312 + 0;  // Slide width + margin (adjust as needed)
 const totalSlides = document.querySelectorAll('.slide').length;
 const slideshowWidth = slideWidth * totalSlides; // Total width of the slideshow
 const containerWidth = document.querySelector('.slideshow-container').clientWidth; // Visible width of the container

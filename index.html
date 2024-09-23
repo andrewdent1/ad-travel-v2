@@ -24,7 +24,10 @@
             background-color: transparent;
         }
 
-        #about, #destinations, #blog, #contact {
+        #about,
+        #destinations,
+        #blog,
+        #contact {
             margin: 100px 0px 100px 0px;
         }
 
@@ -109,7 +112,9 @@
             padding-bottom: 20px;
         }
 
-        #about, #blog, #contact p {
+        #about,
+        #blog,
+        #contact p {
             font-family: 'Montserrat', serif;
             font-weight: 300;
         }
@@ -127,10 +132,10 @@
         }
 
         .about-button {
-            margin-top: 20px;
+            margin-top: 25px;
             padding: 10px 15px;
             border-radius: 5%;
-            border-width: 1px;
+            border: 1px solid black;
             font-family: 'Montserrat', serif;
             font-weight: 500;
             background-color: #ffffff;
@@ -141,6 +146,7 @@
         .about-button a {
             text-decoration: none;
             color: black;
+            font-weight: 300;
         }
 
         .header-colored {
@@ -293,6 +299,7 @@
         #blog button:hover {
             background-color: #715C33;
         }
+
         footer {
             background-color: black;
             color: white;
@@ -343,7 +350,7 @@
             #blog h2 {
                 font-size: 2rem;
             }
-            
+
             .home-blog-posts-head {
                 font-size: 1.4rem;
             }
@@ -374,7 +381,7 @@
             #blog h2 {
                 font-size: 1.8rem;
             }
-            
+
             .home-blog-posts-head {
                 font-size: 1.3rem;
             }
@@ -396,7 +403,7 @@
             #blog h2 {
                 font-size: 1.6rem;
             }
-            
+
             .home-blog-posts-head {
                 font-size: 1.2rem;
             }
@@ -432,7 +439,11 @@
         <nav>
             <a href="index.html" id="logo"><img src="movad-logo-main.png" width="165" height="70"></a>
             <ul class="sidebar">
-                <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                            viewBox="0 -960 960 960" width="24px" fill="#ffffff">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg></a></li>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="about.html">ABOUT</a></li>
                 <li><a href="blog.html">BLOG</a></li>
@@ -443,7 +454,10 @@
                 <li class="hideOnMobile"><a href="about.html">ABOUT</a></li>
                 <li class="hideOnMobile"><a href="blog.html">BLOG</a></li>
                 <li class="hideOnMobile"><a href="contact.html">CONTACT</a></li>
-                <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                            height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                        </svg></a></li>
             </ul>
         </nav>
     </header>
@@ -462,7 +476,8 @@
 
     <section id="about">
         <h2>Explore the world with us.</h2>
-        <p>Movad is here to help you get out and experience the world, one new destination at a time. Travelling with Movad allows you to go where you want, when you want, with who you want.</p>
+        <p>Movad is here to help you get out and experience the world, one new destination at a time. Travelling with
+            Movad allows you to go where you want, when you want, with who you want.</p>
         <button class="about-button"><a href="about.html">About Movad</a></button>
     </section>
 
@@ -473,25 +488,39 @@
             <div class="slideshow-container">
                 <div class="slideshow" id="slideshow">
                     <div class="slide">
-                        <img src="Destinations/Africa.png" alt="Slide 1">
+                        <a href="map-africa.html">
+                            <img src="Destinations/Africa.png" alt="Slide 1">
+                        </a>
                     </div>
                     <div class="slide">
-                        <img src="Destinations/Asia.png" alt="Slide 3">
+                        <a href="map-asia.html">
+                            <img src="Destinations/Asia.png" alt="Slide 2">
+                        </a>
                     </div>
                     <div class="slide">
-                        <img src="Destinations/Australia & Oceania.png" alt="Slide 4">
+                        <a href="map-australia.html">
+                            <img src="Destinations/Australia & Oceania.png" alt="Slide 3">
+                        </a>
                     </div>
                     <div class="slide">
-                        <img src="Destinations/Europe.png" alt="Slide 6">
+                        <a href="map-europe.html">
+                            <img src="Destinations/Europe.png" alt="Slide 4">
+                        </a>
                     </div>
                     <div class="slide">
-                        <img src="Destinations/North America.png" alt="Slide 7">
+                        <a href="map-north-america.html">
+                            <img src="Destinations/North America.png" alt="Slide 5">
+                        </a>
                     </div>
                     <div class="slide">
-                        <img src="Destinations/South America.png" alt="Slide 8">
+                        <a href="map-south-america.html">
+                            <img src="Destinations/South America.png" alt="Slide 6">
+                        </a>
                     </div>
                     <div class="slide">
-                        <img src="Destinations/The Middle East.png" alt="Slide 9">
+                        <a href="map-middle-east.html">
+                            <img src="Destinations/The Middle East.png" alt="Slide 7">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -504,25 +533,37 @@
             <div>
                 <img src="Images/seceda.png" alt="" class="home-blog-posts-img">
                 <h3 class="home-blog-posts-head">A Budgeted Weekend in the Dolomites</h3>
-                <p class="home-blog-posts-p">Ever dream of spending a weekend in the Dolomites without blowing your budget? With its dramatic landscapes and rich cultural history, this stunning region has quickly become a favorite among travelers. But that doesn’t mean you can’t enjoy it without spending a fortune.</p>
+                <p class="home-blog-posts-p">Ever dream of spending a weekend in the Dolomites without blowing your
+                    budget? With its dramatic landscapes and rich cultural history, this stunning region has quickly
+                    become a favorite among travelers. But that doesn’t mean you can’t enjoy it without spending a
+                    fortune.</p>
                 <button class="home-blog-posts-button"><a href="weekend-dolomites.html">View Post</a></button>
             </div>
             <div>
                 <img src="Images/sayulita.png" alt="" class="home-blog-posts-img">
                 <h3 class="home-blog-posts-head">The Trendiest Beach of 2024: Sayulita</h3>
-                <p class="home-blog-posts-p">Famous for its beaches, surfing, and laid-back ambiance, Sayulita is the perfect destination if you're looking to get off the beaten path. Sayulita offers an abundance of colorful streets, art galleries, and traditional eateries, creating one of Mexico's best hidden gems.</p>
+                <p class="home-blog-posts-p">Famous for its beaches, surfing, and laid-back ambiance, Sayulita is the
+                    perfect destination if you're looking to get off the beaten path. Sayulita offers an abundance of
+                    colorful streets, art galleries, and traditional eateries, creating one of Mexico's best hidden
+                    gems.</p>
                 <button class="home-blog-posts-button"><a href="sayulita.html">View Post</a></button>
             </div>
             <div>
                 <img src="Images/siena.png" alt="" class="home-blog-posts-img">
                 <h3 class="home-blog-posts-head">One Day in the Heart of Tuscany</h3>
-                <p class="home-blog-posts-p">Welcome to Siena! Built in the 1200's, this Tuscan hill town will transport you back to the Middle Ages. Siena is well-known for its cuisine, art, museums, medieval architecture, and the Palio, Siena's iconic semi-annual horse race. In this guide we’ll be sharing the best way to do Siena all in one day.</p>
+                <p class="home-blog-posts-p">Welcome to Siena! Built in the 1200's, this Tuscan hill town will transport
+                    you back to the Middle Ages. Siena is well-known for its cuisine, art, museums, medieval
+                    architecture, and the Palio, Siena's iconic semi-annual horse race. In this guide we’ll be sharing
+                    the best way to do Siena all in one day.</p>
                 <button class="home-blog-posts-button"><a href="siena.html">View Post</a></button>
             </div>
             <div>
                 <img src="Images/oahu.png" alt="" class="home-blog-posts-img">
                 <h3 class="home-blog-posts-head">The 2024 Ultimate Guide to Oahu</h3>
-                <p class="home-blog-posts-p">Oahu is Hawaii's most populated island and the most popular among tourists. Oahu definitely offers the most things to do when compared to Maui, Kauai, or the Big Island. After having visited Oahu a few times, I've put together my favorite things to do, places to eat, and hidden gems around the island.</p>
+                <p class="home-blog-posts-p">Oahu is Hawaii's most populated island and the most popular among tourists.
+                    Oahu definitely offers the most things to do when compared to Maui, Kauai, or the Big Island. After
+                    having visited Oahu a few times, I've put together my favorite things to do, places to eat, and
+                    hidden gems around the island.</p>
                 <button class="home-blog-posts-button"><a href="oahu-guide.html">View Post</a></button>
             </div>
         </div>
