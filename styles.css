@@ -6,7 +6,10 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
+    margin: 0;
 }
 
 /* Banner Styles */
@@ -22,6 +25,7 @@ header {
 nav {
     background-color: transparent;
     display: flex;
+    font-family: 'Montserrat', serif;
 }
 
 nav ul {
@@ -56,7 +60,7 @@ nav a:hover {
     height: 100vh;
     width: 200px;
     z-index: 999;
-    background-color: rgba(255, 255, 255, 0.245);
+    background-color: rgba(0, 0, 0, 0.333);
     backdrop-filter: blur(4px);
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
     display: none;
@@ -64,6 +68,7 @@ nav a:hover {
     align-items: flex-start;
     justify-content: flex-start;
     padding-top: 10px;
+    font-family: 'Montserrat', serif;
 }
 
 .sidebar li {
@@ -82,6 +87,7 @@ nav a:hover {
     .hideOnMobile {
         display: none;
     }
+
     .menu-button {
         display: block;
     }
@@ -108,7 +114,8 @@ form label {
     margin-bottom: 8px;
 }
 
-form input, form textarea {
+form input,
+form textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
@@ -130,5 +137,36 @@ form button:hover {
 }
 
 .break {
-    margin:100px;
+    margin: 100px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+    margin-top: auto;
+    min-height: 10vh;
+}
+
+footer a {
+    color: white;
+}
+
+footer p {
+    margin-bottom: 5px;
+}
+
+footer .social-icons {
+    margin: 10px 0;
+}
+
+footer .social-icons a {
+    margin: 0 10px;
+}
+
+footer .social-icons img {
+    width: 25px;
+    height: 25px;
 }

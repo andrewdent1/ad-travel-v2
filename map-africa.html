@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Destinations - Africa</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
@@ -24,72 +25,11 @@
             z-index: 1000;
         }
 
-        nav {
-            background-color: transparent;
-            display: flex;
+        #map {
+            min-height: 90vh;
         }
 
-        nav ul {
-            width: 100%;
-            list-style: none;
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-        }
-
-        nav li {
-            height: 40px;
-        }
-
-        nav a {
-            height: 100%;
-            padding: 0px 30px;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            color: rgb(255, 255, 255);
-            font-family: 'Montserrat', serif;
-        }
-
-        nav a:hover {
-            color: #f0f0f0;
-        }
-
-        .sidebar {
-            position: fixed;
-            right: 0;
-            top: 0;
-            height: 100vh;
-            width: 200px;
-            z-index: 999;
-            background-color: rgba(255, 255, 255, 0.245);
-            backdrop-filter: blur(4px);
-            box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-            display: none;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: flex-start;
-            padding-top: 10px;
-        }
-
-        .sidebar li {
-            width: 100%;
-        }
-
-        .sidebar a {
-            width: 100%;
-        }
-
-        .menu-button {
-            display: none;
-        }
-
-        .header-colored {
-            background-color: #000000;
-            transition: background-color 0.5s;
-        }
-
-        svg {
+        .container svg {
             position: absolute;
             top: 0;
             left: 0;
@@ -217,7 +157,7 @@
         </nav>
     </header>
 
-    <section>
+    <section id="map">
         <div class="container">
             <svg fill: none; viewBox="350 270 400 388">
                 <g id="countries">
@@ -283,7 +223,7 @@
                         data-id="CD" data-name="Democratic Republic of the Congo" id="CD" />
                     <path
                         d="M549.395461,449.545240L547.518207,449.078350L545.865255,450.550829L544.411379,453.134842L544.211872,454.633348L542.008127,453.977516L539.765684,453.245215L536.265575,453.136348L536.063919,454.346921L536.839157,455.780559L539.594985,456.105839L538.394219,459.318252L539.706348,460.958472L538.807708,466.280607L536.359309,466.163834L534.877341,464.830951L534.656623,466.060980L531.834149,467.099124L532.879982,468.935786L530.768394,470.469835L533.045951,473.416558L534.165452,472.214832L535.003466,471.746856L536.042850,472.701471L536.771508,472.984970L540.444608,473.227941L544.393177,469.236604L544.300303,466.951332L546.775647,462.825786L548.601734,461.488804L549.296424,457.052502L551.014876,451.377976L551.179268,449.700324L549.395461,449.545240Z "
-                        data-id="CG" data-name="Republic of Congo" id="CG" />
+                        data-id="CG" data-name="Congo" id="CG" />
                     <path
                         d="M618.471762,426.647138L620.054056,425.969012L620.141340,424.790872L619.485061,423.911511L618.648624,424.605514L617.461344,424.358891L616.486299,425.614329L615.808376,428.584414L617.357561,428.631633L618.025388,428.431237L618.640884,428.934839L619.662782,427.421785L618.471762,426.647138Z "
                         data-id="DJ" data-name="Djibouti" id="DJ" />
@@ -387,6 +327,17 @@
             </div>
         </div>
     </section>
+
+    <footer>
+        <p>&copy; 2024 Movad Travel. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="#"><img src="Social Logos/logo-facebook.png"></a>
+            <a href="#"><img src="Social Logos/logo-x.png"></a>
+            <a href="#"><img src="Social Logos/logo-instagram.png"></a>
+        </div>
+        <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+    </footer>
+
     <script src="script.js"></script>
     <script>
         const countriesInfo = {

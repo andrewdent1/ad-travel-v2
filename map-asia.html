@@ -4,7 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - Africa</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
     <style>
+        header {
+            background-color: black;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
         body {
             margin: 0;
             padding: 0;
@@ -18,7 +38,7 @@
             position: relative;
         }
 
-        svg {
+        .container svg {
             position: absolute;
             top: 0;
             left: 0;
@@ -67,8 +87,35 @@
 </head>
 
 <body>
+    <header>
+        <nav>
+            <a href="index.html" id="logo"><img src="movad-logo-main.png" width="165" height="70"></a>
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                            viewBox="0 -960 960 960" width="24px" fill="#ffffff">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg></a></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+            <ul>
+                <li class="hideOnMobile"><a href="index.html">HOME</a></li>
+                <li class="hideOnMobile"><a href="about.html">ABOUT</a></li>
+                <li class="hideOnMobile"><a href="blog.html">BLOG</a></li>
+                <li class="hideOnMobile"><a href="contact.html">CONTACT</a></li>
+                <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                            height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                        </svg></a></li>
+            </ul>
+        </nav>
+    </header>
+
     <div class="container">
-        <svg fill: none; viewBox="470 0 600 488">
+        <svg fill: none; viewBox="470 -15 600 588">
             <g id="countries">
                 <path
                     d="M628.921208,340.125118L626.498607,338.554432L627.280438,337.400355L625.304577,334.598953L624.730422,333.631564L620.876018,334.206281L621.347266,335.497998L621.080397,337.272875L623.142682,338.174517L624.235382,339.229529L624.812260,339.132161L625.633649,340.097826L626.859066,340.089750L626.846311,340.643464L627.978568,342.708992L628.982837,342.604415L628.921208,340.125118Z "
@@ -81,7 +128,7 @@
                     data-id="BD" data-name="Bangladesh" id="BD" />
                 <path
                     d="M817.841079,445.819050L816.742932,446.860236L818.006474,448.301557L819.914256,447.442286L820.200617,444.293741L817.841079,445.819050Z "
-                    data-id="BN" data-name="Brunei Darussalam" id="BN" />
+                    data-id="BN" data-name="Brunei" id="BN" />
                 <path
                     d="M753.104907,378.351184L751.639565,378.274691L749.657398,377.546335L748.159665,378.344445L746.324835,380.672677L746.384171,381.297426L748.904948,382.477965L755.253329,382.108559L755.448106,380.193887L754.319145,379.195024L753.104907,378.351184Z "
                     data-id="BT" data-name="Bhutan" id="BT" />
@@ -175,6 +222,17 @@
             <p id="modal-text"></p>
         </div>
     </div>
+
+    <footer>
+        <p>&copy; 2024 Movad Travel. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="#"><img src="Social Logos/logo-facebook.png"></a>
+            <a href="#"><img src="Social Logos/logo-x.png"></a>
+            <a href="#"><img src="Social Logos/logo-instagram.png"></a>
+        </div>
+        <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+    </footer>
+
     <script>
         const countriesInfo = {
             "Afghanistan": "Afghanistan",
@@ -240,6 +298,7 @@
             }
         }
     </script>
+    <script src="script.js"></script>
 </body>
 
 </html>

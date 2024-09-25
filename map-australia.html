@@ -4,21 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - Africa</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
     <style>
+        header {
+            background-color: black;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
         body {
             margin: 0;
             padding: 0;
             top: 0;
             left: 0;
-            width: 100vw;
             overflow: hidden;
+            margin-bottom: 50px;
         }
 
         .container {
             position: relative;
         }
 
-        svg {
+        .container svg {
             position: absolute;
             top: 0;
             left: 0;
@@ -67,8 +87,35 @@
 </head>
 
 <body>
+    <header>
+        <nav>
+            <a href="index.html" id="logo"><img src="movad-logo-main.png" width="165" height="70"></a>
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                            viewBox="0 -960 960 960" width="24px" fill="#ffffff">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg></a></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+            <ul>
+                <li class="hideOnMobile"><a href="index.html">HOME</a></li>
+                <li class="hideOnMobile"><a href="about.html">ABOUT</a></li>
+                <li class="hideOnMobile"><a href="blog.html">BLOG</a></li>
+                <li class="hideOnMobile"><a href="contact.html">CONTACT</a></li>
+                <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                            height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                        </svg></a></li>
+            </ul>
+        </nav>
+    </header>
+
     <div class="container">
-        <svg fill: none; viewBox="600 400 600 388">
+        <svg fill: none; viewBox="650 400 500 288">
             <g id="countries">
                 <path
                     d="M932.330648,478.385718L928.542315,473.698152L929.138828,475.820602L932.330648,478.385718Z M921.521746,474.642263L922.453350,472.942392L920.287729,470.995297L920.592865,472.634594L918.261991,474.580352L914.076652,474.936731L911.589985,474.529962L915.218082,476.980084L916.691450,476.983545L920.069303,474.871353L921.521746,474.642263Z M891.061729,466.639698L891.108452,475.704040L891.155032,484.821486L894.023943,484.938635L895.577572,485.408532L897.756093,484.442840L897.402370,482.373825L901.445532,480.650607L905.063023,481.874885L908.077694,485.874150L910.234286,487.669899L915.418735,488.410694L916.101243,489.141904L918.245796,488.129947L914.100014,484.690997L912.511557,484.784326L910.710264,481.809601L908.234204,479.973327L907.621351,478.111057L910.173517,477.810481L909.499465,476.330467L904.878422,474.607564L901.001229,470.143439L895.873822,468.553171L891.061729,466.639698Z M924.731337,471.919225L918.629473,466.361661L919.861771,467.848378L924.731337,471.919225Z "
@@ -100,10 +147,25 @@
             <p id="modal-text"></p>
         </div>
     </div>
+
+    <footer>
+        <p>&copy; 2024 Movad Travel. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="#"><img src="Social Logos/logo-facebook.png"></a>
+            <a href="#"><img src="Social Logos/logo-x.png"></a>
+            <a href="#"><img src="Social Logos/logo-instagram.png"></a>
+        </div>
+        <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+    </footer>
+
     <script>
         const countriesInfo = {
             "Australia": "Australia",
             "New Zealand": "New Zealand",
+            "Fiji": "Fiji",
+            "Solomon Islands": "Solomon Islands",
+            "New Caledonia": "New Caledonia",
+            "Australia": "Australia",
             "Papua New Guinea": "Papua New Guinea"
         };
 
@@ -132,6 +194,7 @@
             }
         }
     </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
