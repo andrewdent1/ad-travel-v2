@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Budget-Friendly Weekend in the Dolomites</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="blog-post.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
@@ -15,55 +16,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
         rel="stylesheet">
-    <style>
-        header {
-            background-color: transparent;
-        }
-
-        .header-colored {
-            background-color: #000000;
-            transition: background-color 0.5s;
-        }
-
-
-        @media (max-width: 1200px) {
-            h1 {
-                font-size: 2.5em;
-            }
-
-            p {
-                font-size: 1.25em;
-            }
-
-            button {
-                font-size: 1em;
-                text-align: center;
-            }
-
-            h2 {
-                font-size: 1.75rem;
-            }
-        }
-
-        @media (max-width: 800px) {
-            h1 {
-                font-size: 2em;
-            }
-
-            p {
-                font-size: 1em;
-            }
-
-            button {
-                font-size: 0.8em;
-                text-align: center;
-            }
-
-            h2 {
-                font-size: 1.5rem;
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -88,11 +40,46 @@
         </nav>
     </header>
 
-    <section>
-        <h2>Welcome to the Dolomites!</h2>
-        <div>
-            <p>These mountains are a part of the Italian Alps, and cover 6,000 square miles of land in Northern Italy. The Dolomites border three neighboring countries - Switzerland, Austria, and Slovenia - and if the day is clear enough, you can even see these countries from the peaks of the mountains. The geographic location of the Dolomites allows for a heavy influence from nearby cultures. 62% of people in this region speak Italian, 30% speak a regional German dialect, and towns often have their own unique dialect. This means that a lot of things have multiple names. There is typically one in English, one in Italian and one in German. For example, the Dolomites is referred to as Dolomiti (Italian) or Dolomiten (German). The majority of towns and valleys in the surrounding area will have multiple names, but luckily the majority of signage around will include the English translation.</p>
+    <section id="home"></section>
+        <div class="container">
+            <img src="Images/dolomite-wknd-cover.jpg" alt="" id="blog-cover">
         </div>
+        <div class="overlay"></div>
+        <div class="welcome-message">
+            <h1>A Budget-Friendly Weekend in the Dolomites</h1>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="intro">
+        <h1>Welcome to the Dolomites!</h1>
+        <div>
+            <p>These mountains are a part of the Italian Alps, and cover 6,000 square miles of land in Northern Italy. The Dolomites border three neighboring countries - Switzerland, Austria, and Slovenia - and if the day is clear enough, you can even see these countries from the peaks of the mountains.</p>
+            <p>The geographic location of the Dolomites allows for a heavy influence from nearby cultures. 62% of people in this region speak Italian, 30% speak a regional German dialect, and towns often have their own unique dialect. This means that a lot of things have multiple names. There is typically one in English, one in Italian and one in German. For example, the Dolomites is referred to as Dolomiti (Italian) or Dolomiten (German).</p>
+        </div>
+    </section>
+    
+    <section id="day1">
+        <h1 class="section-head">Day 1</h1>
+        <br>
+        <h2 class="section-subhead">Take a train to Bolzano</h2>
+        <p>If you're in Milan, Verona, or Venice, the Dolomites are only a few hours away by train to Bolzano (Bozen). Bolzano serves as the capital of the South Tyrol region and borders the heart of the Dolomites. Bolzano is a good hub because the train station is the cheapest to travel into. A train ticket into Bolzano can run anywhere from €20-30 one-way. And although there are places to rent a car in Bolzano, the city also has an active bus station with affordable tickets.</p>
+        <br>
+        <h2 class="section-subhead">Bus from Bolzano to Ortisei</h2>
+        <p>Spending time in Bolzano is optional, we personally chose to catch a bus from Bolzano to Ortisei (Urtijëi) in the same day. A one-way ticket will cost you roughly €7-20 and is usually about a 45 minute ride.</p>
+        <p>In my opinion, Ortisei is the perfect home base for a quick trip to the Dolomites. Ortisei is a quaint town located in the Val Gardena valley. This town offers local restaurants, hotels, and other hidden gems, as well as two lifts; one to each side of its valley's peaks. We recommend taking time your first night to stroll its quiet streets and appreciate its beauty.</p>
+    </section>
+
+    <section id="day2">
+        <h1 class="section-head">Day 2</h1>
+        <br>
+        <h2 class="section-subhead">Seiser Alm</h2>
+
+        <br>
+        <h2 class="section-subhead">Bus from Bolzano to Ortisei</h2>
+        <p>Spending time in Bolzano is optional, we personally chose to catch a bus from Bolzano to Ortisei (Urtijëi) in the same day. A one-way ticket will cost you roughly €7-20 and is usually about a 45 minute ride.</p>
+        <p>In my opinion, Ortisei is the perfect home base for a quick trip to the Dolomites. Ortisei is a quaint town located in the Val Gardena valley. This town offers local restaurants, hotels, and other hidden gems, as well as two lifts; one to each side of its valley's peaks. We recommend taking time your first night to stroll its quiet streets and appreciate its beauty.</p>
     </section>
 
     <script src="script.js"></script>
