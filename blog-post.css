@@ -88,7 +88,8 @@ h2 {
 
 #day1,
 #day2,
-#day3 {
+#day3,
+#day4 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -98,7 +99,8 @@ h2 {
 
 #day1,
 #day2,
-#day3 div {
+#day3,
+#day4 div {
     flex: 1;
 }
 
@@ -126,7 +128,8 @@ h2 {
 
     #day1,
     #day2,
-    #day3 {
+    #day3,
+    #day4 {
         flex-direction: column;
     }
 
